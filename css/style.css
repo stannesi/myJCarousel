@@ -1,0 +1,173 @@
+// CSS by Stanley Ilukhor
+
+body{
+	font-family:"Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	font-size:14px;
+	background:#222;
+	color:#333;
+	text-shadow:1px 1px 1px #fff;
+	overflow-x:hidden;
+}
+
+.photos-cont {
+	width: 100%;
+	height:600px;
+	position:relative;
+	border-top:7px solid #333;
+	border-bottom:7px solid #333;
+	overflow:hidden;
+	box-shadow:0px 0px 7px #000;
+	-webkit-box-shadow:0px 0px 7px #000;
+	-moz-box-shadow:0px 0px 7px #000;
+}
+
+.photos-cont ul {
+	margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.photos-loading {
+    color:#fff;
+    font-size:20px;
+    padding:15px 15px 15px 50px;
+    position:absolute;
+    background:#333 url(../imgs/loading.gif) no-repeat 10px 50%;
+
+    border-radius:15px;
+	-webkit-border-radius:15px;
+    -moz-border-radius:15px;
+	
+    opacity:0.7;
+    width:50%;
+    top:150px;
+    
+	left:0;
+	right:0;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	text-align:center;
+}
+
+.photos-bg {
+	 background:transparent url(../imgs/bg1.png) repeat top left;
+}
+
+
+.photos-bg div{
+    position:absolute;
+    top:0px;
+    left:0px;
+	width:7584px;
+    height:500px;
+    background-repeat:repeat;
+    background-position:top left;
+    background-color:transparent;
+}
+
+.photos-bg .bg1{
+	 background-image:url(../imgs/bg1.png);
+}
+
+.photos-bg .bg2{
+	 background-image:url(../imgs/bg2.png);
+}
+
+
+.carousel-wrapper {
+	display:none;	
+}
+
+ul.photos {
+ 	position:absolute;
+    left:0px;
+    top:0px;
+    height:500px;
+}
+
+ul.photos li {
+   	height:500px;
+    float:left;
+    position:relative;	
+}
+
+ul.photos li img {
+    display:block;
+    margin:20px auto 0px auto;
+	height:500px;
+
+    box-shadow:0px 0px 7px #222;
+    -webkit-box-shadow:0px 0px 7px #222;
+    -moz-box-shadow:0px 0px 7px #222;
+	
+    border: 10px solid #fff;
+	
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+ul.thumbs {
+	height:35px;
+    position:absolute;
+    bottom:100px;
+    left:50%;
+}
+
+ul.thumbs li {
+    position:absolute;
+    display:block;
+}
+
+ul.thumbs li img{
+	border: 5px solid #FFFFFF;
+
+    box-shadow:1px 1px 7px #555;
+    -webkit-box-shadow:1px 1px 7px #555;
+    -moz-box-shadow:1px 1px 7px #555;
+	height: 80px;
+    cursor:pointer;
+    display:block;
+    opacity:0.8;
+}
+
+ul.thumbs li.selected img{
+    opacity:1.0;
+	padding: 3px 3px;
+	border-color: #FFC;
+	
+	-webkit-transition-property: background;
+	-webkit-transition-duration: 0.30s;
+	-webkit-transition-timing-function: ease;
+}
+
+.nav span {
+	position:absolute;
+    width:30px;
+    height:60px;
+
+    box-shadow:0px 0px 2px #000;
+    -webkit-box-shadow:0px 0px 2px #000;
+    -moz-box-shadow:0px 0px 2px #000;
+	
+    top:145px;
+    opacity:0.6;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.nav span:hover {
+	opacity:0.7;
+}	
+
+.nav span.prev{
+    background:#000 url(../imgs/prev.png) no-repeat center center;
+}
+
+.nav span.next{
+    background:#000 url(../imgs/next.png) no-repeat center center;
+}
